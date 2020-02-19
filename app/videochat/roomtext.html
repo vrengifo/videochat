@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<TITLE>Chat Room</TITLE>
+<STYLE TYPE="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</STYLE></HEAD>
+<BODY bgcolor="#FFFFFF" oncontextmenu="return false;">
+
+<SCRIPT LANGUAGE=JavaScript1.1>
+<!--
+	var appURL = String(document.location);
+	if (appURL.indexOf("?") != -1) {
+		var appParams = appURL.substr(appURL.indexOf("?"));
+	} else {
+		var appParams = "";
+	}
+	document.write('<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"');
+	document.write('  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0" ');
+	document.write(' ID="sample_room" WIDTH="480" HEIGHT="250" ALIGN="">');
+	document.write(' <PARAM NAME=movie VALUE="textchat.swf' + appParams + '"> ');
+	document.write(' <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF> ');
+	document.write(' <EMBED src="twoway.swf' + appParams + '" quality=high bgcolor=#FFFFFF  ');
+	document.write(' swLiveConnect=FALSE WIDTH="380" HEIGHT="453" NAME="room" ALIGN=""');
+	document.write(' TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">');
+	document.write(' </EMBED>');
+	document.write(' </OBJECT>');
+//-->
+</SCRIPT><NOSCRIPT>This application requires JavaScript Support</NOSCRIPT>
+</BODY>
+</HTML>

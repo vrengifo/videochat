@@ -1,0 +1,64 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+						<TABLE  BORDER="0" CELLPADDING="4" CELLSPACING="0">
+                              <?php
+								include_once("../class/contactxuser.php");
+								include_once("../class/group.php");								
+								$ocontact=new contactxuser($conn);
+								$arr=$ocontact->groupbyuserObj($sUser);
+								if($arr==0)
+								{
+								?>
+							  <TR>
+                                <TD WIDTH="16"><IMG SRC="../images/icon_online.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Cristina</A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_offline.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Barahondas</A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_waiting.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Pablo C </A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_blocked.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Paul Gilbert </A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_online.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Cristina</A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_waiting.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Pablo C </A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_blocked.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Paul Gilbert </A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_online.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Cristina</A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_waiting.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Pablo C </A></TD>
+                              </TR>
+                              <TR>
+                                <TD><IMG SRC="../images/icon_offline.gif" WIDTH="16" HEIGHT="16"></TD>
+                                <TD><A HREF="#" CLASS="LinkWhosonline">Barahondas</A></TD>
+                              </TR>
+								<?
+								}
+								else
+								{  
+								  for($i=0;$i<count($arr);$i++)
+								  {
+								    //antes: echo($ocontact->mycontactHtml($sUser,$arr[$i]));
+									//con grupo
+									echo($ocontact->groupbyuserHtml($sUser,$arr[$i]));
+									
+								  }	
+								}  
+							  ?>
+                            </TABLE>

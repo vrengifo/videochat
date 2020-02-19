@@ -1,0 +1,84 @@
+.login {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border: 1px solid #CCCCCC;
+	color: #990000;
+}
+.LinkDown {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+	text-decoration: none;
+}
+.LinkDown:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.LinkWhosonline {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.LinkWhosonline:HOVER {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+}
+.linkstop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+.linkstop:HOVER {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: underline;
+}.user {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+.form {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.fields {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #999999;
+}
+.boton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: 1px solid #666666;
+	background-color: #F0F0F0;
+}
+.TxtDescripciones {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+.TTLinteriores {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+}

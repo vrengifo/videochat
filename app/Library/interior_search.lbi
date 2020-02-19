@@ -1,0 +1,7 @@
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><TABLE BORDER="0" ALIGN="CENTER" CELLPADDING="0" CELLSPACING="0"><FORM>
+                              <TR>
+                                <TD><INPUT NAME="textfield3" TYPE="text" CLASS="login" VALUE="Search" SIZE="16"></TD>
+                                <TD><IMG SRC="../images/separate.gif" WIDTH="6" HEIGHT="8"></TD>
+                                <TD> <INPUT NAME="imageField" TYPE="image" SRC="../images/icon_search.gif" WIDTH="16" HEIGHT="16" BORDER="0"></TD>
+                              </TR>
+                            </FORM></TABLE>

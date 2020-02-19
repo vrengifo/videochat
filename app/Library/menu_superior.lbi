@@ -1,0 +1,39 @@
+<?php
+  session_start();
+  include_once("../includes/main.php");
+?>
+<?php
+  include_once("../class/user.php");
+  $ou=new user($conn);
+  $ou->info($sUser);
+  include_once("../class/plan.php");
+  $oplan=new plan($conn);
+  $oplan->info($ou->plan_id);
+  $url=$oplan->plan_url.'?appInstance='.$ou->user_instance.'&username='.$ou->user_nickname;
+  $cadurl=' onClick="MM_openBrWindow(\''.$url.'\',\'video'.$oplan->plan_nboxes.'\',\''.$oplan->plan_urlfeatures.'\')"';
+?>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<script LANGUAGE="JavaScript" TYPE="text/JavaScript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+</script>
+								  <TABLE WIDTH="100%" BORDER="0" ALIGN="center" CELLPADDING="0" CELLSPACING="0">
+                                      <TR ALIGN="center">
+                                        <TD NOWRAP>
+										
+										  <A HREF="#" <?=$cadurl?> CLASS="linkstop">
+										    MY ROOM
+										  </A>
+										</TD> 
+                                        <TD NOWRAP><A HREF="../profile.php" CLASS="linkstop">MY 
+                                          PROFILE</A></TD>
+                                        <TD NOWRAP><A HREF="../favorites.php" CLASS="linkstop">MY 
+                                          CONTACTS</A></TD>
+                                        <TD NOWRAP><A HREF="../invite.php" CLASS="linkstop">INVITE 
+                                          FRIENDS</A></TD>
+                                        <TD NOWRAP><A HREF="../requests.php" CLASS="linkstop">AUTHORIZE 
+                                          REQUESTS</A></TD>
+                                        <TD NOWRAP><A HREF="../logout.php" CLASS="linkstop">LOGOUT</A></TD>
+                                      </TR>
+                                  </TABLE>
